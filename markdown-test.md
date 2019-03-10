@@ -39,7 +39,7 @@ order by col_2
 
 Here is an image (always leave a blank line under before the image):
 
-![](random-screenshot.png)
+![](images/random-screenshot.png)
 
 ---
 
@@ -48,7 +48,22 @@ Here is an image (always leave a blank line under before the image):
 
 Here is a table:
 
-|Name  | City  | DOB|Checked|
-|---|---|---|---|
-| Baruch  | Long Island  |07-24-1935|Y|
-|Mendy|Iowa|07-24-1925|N|
+|---|---|Name  | City  | DOB|Checked|
+|---|---|---|---|---|---|
+|---|---| Baruch  | Long Island  |07-24-1935|Y|
+|---|---|Mendy|Iowa|07-24-1925|N|
+
+
+Multi-line Editing: `CTRL+SHIFT+L`
+
+
+1. `jklsdf`
+    - asdfasdf
+2. `sdfsd`
+    - sdsdfds
+3. `sd`
+    - sdsfsfsdfs
+4. `dsfsfsf`
+    - asdfsdf
+
+
