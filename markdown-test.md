@@ -44,3 +44,11 @@ Here is an image (always leave a blank line under before the image):
 ---
 
 [My GitHub Repository](https://github.com/Ylazerson/coding-deep-dive)
+
+
+Here is a table:
+
+|Name  | City  | DOB|Checked|
+|---|---|---|---|
+| Baruch  | Long Island  |07-24-1935|Y|
+|Mendy|Iowa|07-24-1925|N|
