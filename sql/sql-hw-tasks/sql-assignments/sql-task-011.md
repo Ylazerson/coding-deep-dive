@@ -7,7 +7,13 @@
 
 - Use the `data-science-course-226116.sql_lessons.group_by_sandbox`  table
 
+---
+
 - ***Level-of-Grain***: first digit of character of account
+    - Note, there is a **bug** at this moment in BigQuery. 
+    - If you use an alias in the SELECT clause you must use that alias in the GROUP BY and ORDER BY clause (if you need that logic to be used in those clauses)
+
+---
 
 - Output columns:
     - account_char_1
