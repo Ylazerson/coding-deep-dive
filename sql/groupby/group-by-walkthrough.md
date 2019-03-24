@@ -5,6 +5,12 @@
 
 ---
 
+### Synonyms in SQL to keep in mind:
+- row, record, line
+- column, field, attribute
+
+
+---
 
 ```sql
 
@@ -184,7 +190,7 @@ select   campaign,
          count(distinct account) number_of_distinct_accounts
          
 -- step 1:
-FROM     `data-science-course-226116.sql_lessons.group_by_sandbox` 
+from     `data-science-course-226116.sql_lessons.group_by_sandbox` 
 -- step 2:
 where    cost > 5.5
 -- step 3:
