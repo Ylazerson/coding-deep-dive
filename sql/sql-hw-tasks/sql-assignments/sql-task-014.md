@@ -10,7 +10,7 @@
     - `data-science-course-226116.sql_lessons.join_test_states`
 
 - Join the states to the counties and show how many counties are in each state
-- Only show where the count is more than 14 or less than 2  
+- Only show where the count is more than 140 or less than 2  
 
 ---
 
