@@ -21,13 +21,13 @@ select   account,
              partition by  account
              order by      account_day_seq_no
              range between 2 preceding and current row
-         ) tree_day_moving_avg,    
+         ) moving_avg_3_day,    
          -- -------------------------------------------------
          avg(cost) over (
              partition by  account
              order by      day, pk_id
              rows between 2 preceding and current row
-         ) tree_rows_moving_avg     
+         ) moving_avg_3_rows     
          -- -------------------------------------------------
 from     `data-science-course-226116.sql_lessons.google_ads_etl_step_2` 
          -- -------------------------------------------------
