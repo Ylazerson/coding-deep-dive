@@ -29,3 +29,10 @@ python -m ipykernel install --user --name py-test-app --display-name "Python (py
 pip install -r requirements.txt
 
 ```
+
+---
+
+### Setup BigQuery authentication using the GCP Console:
+- See: https://cloud.google.com/bigquery/docs/reference/libraries
+- This will let you download a private key, for example `stats-learning-d43fdf44694a.json`
+- Store the json-key-file in an appropiate directory, such as: `~/app-keys` 
