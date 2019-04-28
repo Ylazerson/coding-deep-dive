@@ -19,7 +19,8 @@ Cons:
 - Need to redo for entire dataset everytime a new record comes in
 */
 
-
+with stg as
+(
 select   id,
          first_name,
          last_name,
@@ -39,5 +40,12 @@ order by id,
          last_name,
          dept_id
          -- --------------------------------------------
-
-
+)
+select   *,
+         case when partition_seq_no > 1 then 'dupe' else 'keep' end dupe_or_keep
+from     stg
+--where    partition_seq_no = 1 -- only keep the non-dupes 
+order by id,
+         first_name,
+         last_name,
+         dept_id
