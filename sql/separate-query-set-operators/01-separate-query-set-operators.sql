@@ -81,7 +81,7 @@ select 'Yossi' first_name, 'David' last_name
 --
 union all
 --
-select 'Mendy' first_name, 'Effune' last_name 
+select 'Mendy' first_name, 'Efune' last_name 
 )
 -- -----------------------------------------------------
 select   first_name, last_name
@@ -124,7 +124,7 @@ select 'Yossi' first_name, 'David' last_name
 --
 union all
 --
-select 'Mendy' first_name, 'Effune' last_name 
+select 'Mendy' first_name, 'Efune' last_name 
 )
 -- -----------------------------------------------------
 select   first_name, last_name

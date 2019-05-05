@@ -30,9 +30,9 @@ select 2 id, 3.0 year_2015, 3.0 year_2016, 3.0 year_2017
 years as
 (
 select   2015 year_value 
-union distinct
+union all
 select   2016 
-union distinct 
+union all 
 select   2017
 )
 -- ----------------------------------------------------------
@@ -58,9 +58,9 @@ select 2 id, 3.0 year_2015, 3.0 year_2016, 3.0 year_2017
 years as
 (
 select   2015 year_value 
-union distinct
+union all
 select   2016 
-union distinct 
+union all 
 select   2017
 )
 -- ----------------------------------------------------------
