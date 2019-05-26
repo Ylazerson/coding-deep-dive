@@ -5,7 +5,8 @@ with stg as
 (
 select   lower(county) county, 
          -- ---------------------------------------------- 
-         sum(bottles_sold) over (             
+         sum(bottles_sold) over (    
+              partition by  county         
               order by      date
               rows between 10 preceding and current row
           ) last_10_bottle_sales
