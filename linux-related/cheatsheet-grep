@@ -1,0 +1,97 @@
+B"H
+
+
+
+
+----------------------------------------------------------------------------------------------------
+http://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+
+
+------------------------------------------------------------------------
+See all of the words that end in ion:
+grep -E 'ion$' /usr/share/dict/words | more
+
+
+Look for words that start with P-O then something, something, then U-T-E:
+grep -E '^po..ute$' /usr/share/dict/words
+
+
+Find words which have 6 vowels in a row:
+grep -E '[aeiou]{6}' /usr/share/dict/words
+
+------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------
+****** TYPICAL USAGE: ******
+grep -rin -C1 --include="*" --color "<CHARACTERS TO SEARCH>" ~/src/
+
+grep -ril --exclude-dir=scripts 'SRX_COLS' ~/src/sql/
+
+REMEMBER A LOT OF SQL WON'T SHOW IN SQL FILES BUT RATHER PKB:
+grep -rin --include="*pkb" --color "<CHARACTERS TO SEARCH>" ~/src/sql/
+
+grep -rin --exclude-dir=scripts --include="*.sql" --color "<CHARACTERS TO SEARCH>" ~/src/
+
+grep -rin --exclude-dir="\.git" --include="*" --color "<CHARACTERS TO SEARCH>" ~/src/ 
+
+grep -rin --exclude-dir=scripts --exclude-dir="\.git" --color "vc_852_sdqdc" ~/src/
+
+ls -r *sql | xargs grep -l "vtrak.vt_admin_sections_utl" | more
+------------------------------------------------------------------------
+
+
+SEARCH RECURSIVELY I.E. READ ALL FILES UNDER EACH DIRECTORY:
+grep -r --color "create-new-project" ./devtools/
+
+IGNORE WORD CASE:
+grep -i "boo" ./etc/passwd
+
+SEARCH EXACT WORD ONLY:
+grep -w "boo" file
+
+SEARCH 2 DIFFERENT WORDS:
+egrep -w 'word1|word2' /path/to/file
+
+PRECEDE EACH LINE OF OUTPUT WITH THE NUMBER OF THE LINE IN THE TEXT FILE FROM WHICH IT WAS OBTAINED:
+grep -n 'root' /etc/passwd
+
+PRINT ALL LINES THAT DO NOT CONTAIN THE WORD BAR:
+$ grep -v bar /path/to/file
+
+
+EXAMPLE WITH PIPES (display cpu model name):
+cat /proc/cpuinfo | grep -i 'Model'
+
+  OR
+
+grep -i 'Model' /proc/cpuinfo
+
+
+LIMIT YOUR SEARCH FOR *.TXT BY PASSING THE --INCLUDE OPTION TO GREP COMMAND:
+grep -R --include="*.txt" "foo" ~/projects/
+
+
+
+LIST JUST THE NAMES OF MATCHING FILES:
+grep -l -r 'create-new-project' ./devtools/
+history | grep laz 
+
+EXECUTE A SPECIFIC COMMAND FROM HISTORY
+  If you want to repeat the command #4, you can do !4
+
+----------------------------------------------------------------------------------------------------
+SOME USED EXAMPLES:
+grep -r -i -n --include="*.cf*" --color "bootstrap" ./src/Secure/Administrator/ 
+grep -r -i -n --color "blah " ./
+grep -r -i -n --include="*.sql*" --color "debitmemono" ./src/Secure/Administrator/ 
+grep -i debitmemono *.sql
+grep -r -i -n --color "CREATE TABLE" | more 
+
+grep -r -i -n --include="*Makefile*" --color "vt_n" 
+
+----------------------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+

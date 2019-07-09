@@ -1,0 +1,24 @@
+B"H
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SETUP STEPS:
+
+sudo apt-get update
+
+sudo apt-get install zsh
+
+which zsh
+
+chsh -s /usr/bin/zsh
+
+tail /etc/passwd
+
+GOTO: http://ohmyz.sh/
+GET LATEST SCRIPT FOR BELOW:
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+COPY OVER .zsh* files from repo for settings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

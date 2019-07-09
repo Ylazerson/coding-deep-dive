@@ -1,0 +1,113 @@
+B"H
+
+
+
+___________________________________________________________________
+SESSIONS
+--------
+
+
+NEW SESSION:
+tmux new -s mysession
+
+
+ATTACH SESSION:
+tmux a -t mysession
+
+
+REMOVE SESSION:
+tmux kill-ses -t mysession
+
+
+DETACH SESSION: 
+ctrl+z d
+
+
+RENAME SESSION:
+ctrl+z $
+
+
+LIST SESSIONS OUTSIDE TMUX:
+tmux ls
+
+
+LIST SESSIONS INSIDE TMUX:
+ctrl+z s
+
+___________________________________________________________________
+WINDOWS
+-------
+
+
+CREATE WINDOW:
+    ctrl+z c
+
+
+RENAME WINDOW:
+    ctrl+z ,
+
+
+CLOSE WINDOW:
+    ctrl+z &
+
+
+LIST WINDOWS:
+    ctrl+z w
+
+MOVE TO OTHER WINDOW:
+    shift+right or shift+left
+
+
+MOVE A WINDOW TO THE LEFT/RIGHT (I.E. CHANGE WINDOW ORDER):
+    ctrl+shift+left    will move the current window to the left
+    ctrl+shift+right   will move the current window to the right
+
+___________________________________________________________________
+PANES
+-------
+
+
+SPLIT HORIZONTALLY:
+ctrl+z h
+
+
+SPLIT VERTICALLY:
+ctrl+z v
+
+SWITCH TO PANE:
+alt+arrow
+
+TOGGLE ZOOM:
+ctrl+z z
+
+REMOVE PANE:
+ctrl+z x
+
+RESIZE PANE:
+ctrl+z+<arrow>   OR USE MOUSE
+
+
+___________________________________________________________________
+MISC
+-------
+
+ENTER COMMAND MODE:
+ctrl+z :
+
+
+SHOW SHORTCUTS:
+ctrl+z ?
+
+
+
+___________________________________________________________________
+RESTORE
+-------
+
+SAVE TMUX ENV:
+ctrl+z+s
+
+
+RESTORE TMUX ENV:
+ctrl+z+r
+

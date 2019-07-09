@@ -1,0 +1,42 @@
+B"H
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VIM
+---
+
+Paste From System Clipboard:
+    zd
+
+Copy Whole File Into System Clipboard:    
+    zc
+
+-- ----------------------------------------
+
+Copy Area To "buffer" File:
+    1   hightlight area
+    2   :w ~/d
+
+Paste Contents of "buffer" File:
+    :r ~/d    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TMUX
+----
+
+Copy From System Clipboard:
+    Ctrl+Shift+V
+
+Yank Command Line Into System Clipboard:
+    Ctrl+z  y
+
+Copy Area Into System Clipboard:    
+    1   Ctrl+z [
+    2   use v to highlight area
+    3   y
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

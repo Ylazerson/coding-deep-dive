@@ -1,0 +1,55 @@
+B"H
+
+
+MAIN ONES
+---------
+-a  Show hidden files as well	
+
+-d 	List directories only.
+
+-F 	Append a `/' for directories, a `=' for socket files, a `*' for executable files and a `|' for FIFO's, as per ls -F
+
+-L level 	Max display depth of the directory tree.
+
+
+
+LESS COMMON
+------------
+
+-f 	Prints the full path prefix for each file.
+
+-i 	Tree will not print the indentation lines. Useful when used in conjunction with the -f option.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-P pattern 	List only those files that match the wild-card pattern. 
+            Note: you must use the -a option to also consider those files beginning with a dot `.' for matching. 
+            Valid wildcard operators are: 
+                `*' (any zero or more characters) 
+                `?' (any single character) 
+                `[...]' (any single character listed between brackets 
+                    (optional - (dash) for character range may be used: ex: [A-Z]) 
+                `[^...]' (any single character not listed in brackets) 
+                `|' separates alternate patterns.
+
+-I pattern 	Do not list those files that match the wild-card pattern.
+
+--prune 	Makes tree prune empty directories from the output, useful when used in conjunction with -P or -I.
+
+Example: tree -P "*al.py" --prune
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-p 	Print the protections for each file (as per ls -l).
+-s 	Print the size of each file along with the name.
+-u 	Print the username, or UID # if no username is available, of the file.
+-g 	Print the group name, or GID # if no group name is available, of the file.
+-D 	Print the date of the last modification time for the file listed.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-r 	Sort the output in reverse alphabetic order.
+-t 	Sort the output by last modification time instead of alphabetically.
+
+-A 	Turn on ANSI line graphics hack when printing the indentation lines.
+-o file name 	Send output to file name.
